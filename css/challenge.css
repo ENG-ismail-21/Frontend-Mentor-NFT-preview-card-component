@@ -1,0 +1,173 @@
+/* Start Global */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Soft-blue: hsl(215, 51%, 78%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* End Global Rules */
+body {
+    background-color: var(--main-BG);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    height: calc(100vh - 1px);
+}
+
+/* Start Container */
+.container {
+    background-color: var(--card-BG);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
+@media(min-width:375px) {
+    .container {
+        width: 350px;
+    }
+}
+
+/* End Container */
+/* Start Image */
+.container .main-image img {
+    max-width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.container .main-image {
+    position: relative;
+}
+
+.container .main-image div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%, 50%);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: ease 0.5s;
+}
+
+.container .main-image div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* img Image */
+/* Start H1 */
+h1 {
+    color: var(--White);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+/* End H1 */
+/* start P */
+.container p {
+    color: var(--Soft-blue);
+    margin-bottom: 1rem;
+}
+
+/* End P */
+/* Start Time */
+.container .time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.container .time .one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .time .two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .time p {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.container .time .one p {
+    color: var(--Cyan);
+    font-weight: 400;
+}
+
+/* End Time */
+/* start Hr */
+hr {
+    background-color: var(--line);
+    border: none;
+    height: 1px;
+    margin-bottom: 1.25rem;
+}
+
+/* end Hr */
+
+/* Start  Last */
+.container .last {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container .last img {
+    width: 60px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    margin-left: -40px;
+}
+
+.container .last p {
+    margin-left: -70px;
+    margin-top: 15px;
+}
+
+.container .last span {
+    color: var(--White);
+    transition: 0.5s;
+}
+
+.container .last span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+/* End  Last */
